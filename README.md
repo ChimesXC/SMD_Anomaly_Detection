@@ -21,7 +21,7 @@ pip install -r requirements.txt
 Note: torch-scatter and torch-sparse may require manual installation depending on your PyTorch version. If you encounter errors, please download the appropriate wheel from https://data.pyg.org/whl/.
 
 ## Repository Structure
-.
+```
 ├── code/
 │   ├── LSTM_all_windows.py      # LSTM baseline on all window sizes
 │   ├── GNN-corr.py              # GNN + Pearson correlation graph
@@ -32,8 +32,8 @@ Note: torch-scatter and torch-sparse may require manual installation depending o
 │   └── *.png                    # All figures used in the paper
 ├── .gitignore
 ├── README.md
-└── requirements.txt
-
+└── requirements.txt```
+```
 ## How to Run
 - Prepare data as described above.
 
@@ -49,7 +49,7 @@ python code/window_ablation.py
 ```
 - Generate all figures:
 ```bash
-- python code/plot_corrected.py
+python code/plot_corrected.py
 ```
 All output figures and CSV results will be saved to the results/ folder.
 
